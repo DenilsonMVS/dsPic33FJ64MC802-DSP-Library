@@ -6,10 +6,10 @@ Contém funções para UART, QEI, PWM, PLL, ADC e Timer.
 Iniciação científica pelo CEFET-MG campus Divinópolis  
 Título: Desenvolvimento de um DSP para sistemas de controle inteligentes  
 Aluno: Denilson Martins Vieira Santos
-orientador: Dr. Lucas Silva de Oliveira
+Orientador: Dr. Lucas Silva de Oliveira
 
 
-Como o dsPIC33FJ64MC802 é um microcontrolador de 16 bits, deve-se atentar ao tamanho de suas variáveis.
+Como o dsPIC33FJ64MC802 é um microcontrolador de 16 bits, deve-se atentar ao tamanho de suas variáveis:
 
     int: 16 bits -> (-32768 / 32767)
     long int: 32 bits -> (-2147483648 / 2147483647)
