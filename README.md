@@ -17,7 +17,7 @@ Como o dsPIC33FJ64MC802 é um microcontrolador de 16 bits, deve-se atentar ao ta
 
 
 
-Não é recomendado a utilização de macros
+Não é recomendado a utilização de macros.
 Ocorreram problemas ao realizar operações aritiméticas com macros. Exemplo:
 
     #define A 50                                -> (Funciona) A possui o valor de 50
