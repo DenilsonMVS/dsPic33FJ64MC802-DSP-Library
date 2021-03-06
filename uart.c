@@ -33,6 +33,11 @@ void initUART(unsigned long int desiredBaudRate) {
 }
 
 
+//	No caso, é utilizado o  registrador U1STAbits.TRMT para esperar o envio, no entanto,
+//	isso pode causar falhas na transmissão.
+//	Segundo esse post: https://electronics.stackexchange.com/questions/426495/when-to-monitor-uxstabits-trmt-and-uxstabits-utxbf
+//	O registrador a ser utilizado seria U1STAbits.UT1BF. Não pude testar esse registrador, no entanto pode resolver problemas na transmissão.
+
 typedef union {
 	int i;
     long int li;
